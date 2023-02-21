@@ -41,4 +41,4 @@ end
 
 a1 = Calculate.new
 date_of_birth = DateTime.new(2002,06,07,4,5)
-a1.age(date_of_birth)
+a1.calculate(date_of_birth)
