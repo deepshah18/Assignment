@@ -48,6 +48,10 @@ module Bank
                      else
                        @condition = false
                      end
+                  else
+                     puts "Wrong pin !! Please enter correct pin"
+		             start
+                     break
                 end  
             end
          end
