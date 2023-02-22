@@ -1,6 +1,6 @@
 class Cal
-  a="true"
-  b="false"
+  a=true
+  b=false
   @c=a and b
   @d= a && b
     def display
