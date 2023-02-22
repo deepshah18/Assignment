@@ -63,6 +63,6 @@ choice = gets.chomp
 end
 end
 
-File.open("phone.txt", "a+") do |f|
+File.open("phone.txt", "w") do |f|
   f.write(hash.to_s)
 end
