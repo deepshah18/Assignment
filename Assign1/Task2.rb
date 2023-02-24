@@ -1,10 +1,8 @@
-class User
-   	
-  	CONSTANT='surat'
+class User 
+  CONSTANT='surat'
   def initialize(user)
   @@user=user
-  end
-  	
+  end    
 end
 class Company < User
   def initialize(company)
@@ -15,12 +13,7 @@ class Company < User
   puts "#{@company}"
   puts "#{@@user}"
   end
-	
-
 end
-
-user=User.new('dep')
-	company=Company.new('google')
-        company.display
-
-
+user=User.new('deep')
+company=Company.new('google')
+company.display
