@@ -1,14 +1,15 @@
+EXPECTED_MINUTES_IN_OVEN = 40
 class Lasagna
- EXPECTED_MINUTES_IN_OVEN = 40
+ 
 
-  def remaining_minutes_in_oven(a)
-     return EXPECTED_MINUTES_IN_OVEN - a
+  def remaining_minutes_in_oven(time)
+     return EXPECTED_MINUTES_IN_OVEN - time
   end
-  def preparation_time_in_minutes(b)
-      return b*2
+  def preparation_time_in_minutes(layer)
+      return layer*2
   end 
-  def total_time_in_minutes(a,b)
-      result= remaining_minutes_in_oven(b) + preparation_time_in_minutes(a)
+  def total_time_in_minutes(layer,time)
+      result= remaining_minutes_in_oven(time) + preparation_time_in_minutes(layer)
       puts "#{result}"
   end
 end
