@@ -7,10 +7,10 @@ class Product
   @pprice=price
   end
   def create()
-       puts "enter your name"
-       @pn=gets
-       puts "enter gst"
-       @p=gets
+     puts "enter your name"
+      @pn=gets
+      puts "enter gst"
+      @p=gets
    end
 
    def calc()
@@ -18,7 +18,6 @@ class Product
      final1=@p.to_i;
      total=final * final1 / 100;
      @answer=@pprice + total;
-  
    end
    def get_user()
      create()
@@ -28,10 +27,7 @@ class Product
      puts "Product details"
      puts "#{$productcompany} :: #{@pname} - #{@answer}" 
      end
-     
-   
-   begin
-      
+   begin 
       product1=Product.new('keyboard',100);
       product1.get_user
       product2=Product.new('mouse',200);
