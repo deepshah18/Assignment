@@ -11,10 +11,10 @@ class Account
                -3.213     
       end
    end
-   def annual_balance_update(p)
-       r = interest_rate(p)
-      answer = p*r*1/100
-       answer + p
+   def annual_balance_update(principal)
+       rate = interest_rate(principal)
+    annual_interest = principal*rate*1/100
+     annual_interest + principal
    end
    def years_before_desired_balance(a, b)
        count = 0
@@ -26,9 +26,5 @@ class Account
        puts count
    end
 end
-                         
-      
-   
-
-p1= Account.new()
+p1= Account.new
 p1.years_before_desired_balance(200.75,214.88)
