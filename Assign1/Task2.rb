@@ -8,7 +8,7 @@ class Company < User
   def initialize(company)
   @company=company
   end
-  def display()
+  def display
   puts "#{CONSTANT}"
   puts "#{@company}"
   puts "#{@@user}"
