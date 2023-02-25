@@ -1,4 +1,5 @@
 EXPECTED_MINUTES_IN_OVEN = 40
+CONSTANT_TWO=2
 class Lasagna
  
 
@@ -6,7 +7,7 @@ class Lasagna
      return EXPECTED_MINUTES_IN_OVEN - time
   end
   def preparation_time_in_minutes(layer)
-      return layer*2
+      return layer*CONSTANT_TWO
   end 
   def total_time_in_minutes(layer,time)
       result= remaining_minutes_in_oven(time) + preparation_time_in_minutes(layer)
